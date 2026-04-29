@@ -1,11 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import Todo from './Todo.jsx'
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import App from "./App.jsx";
+// import UserProvider from "./AuthContext/UserProvider.jsx";
+// import { ThemeProvider } from "./Theme/ThemeProvider.jsx"; // 👈 add this
 
-createRoot(document.getElementById('root')).render(
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <ThemeProvider>     {/* 👈 theme sabse outer */}
+//     <UserProvider>
+//       <App />
+//     </UserProvider>
+//   </ThemeProvider>
+// );
+
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import './index.css';
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
